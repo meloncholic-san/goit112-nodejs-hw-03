@@ -1,5 +1,5 @@
 {
-  "name": "goit-node-js",
+  "name": "goit-node",
   "version": "1.0.0",
   "description": "goit-node-js",
   "type": "module",
@@ -21,6 +21,7 @@
     "pino-http": "^10.5.0"
   },
   "dependencies": {
+    "http-errors": "^2.0.0",
     "mongoose": "^8.15.1"
   }
 }
