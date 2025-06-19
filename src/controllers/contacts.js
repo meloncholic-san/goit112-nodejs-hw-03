@@ -6,7 +6,7 @@ import { getAllContacts, getContactById, createContact, updateContact, deleteCon
     export async function getContactsCtrl(req, res) {
         const contacts = await getAllContacts();
 
-        res.json({data:contacts, message: "Successfully found contacts!"});
+        res.json({status: 200, data:contacts, message: "Successfully found contacts!"});
     }
     
 
@@ -16,7 +16,7 @@ import { getAllContacts, getContactById, createContact, updateContact, deleteCon
 
         if(!contact) throw new createHttpError.NotFound('Contact not found');
 
-        res.json({data:contact, message: "Successfully found contact!"});
+        res.json({status: 200, data:contact, message: "Successfully found contact!"});
     }
 
 
